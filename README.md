@@ -12,12 +12,20 @@ Install using your favourite plugin manager; for instance if you are using [lazy
 
 ## Usage
 
-| Encode       | Decode       |
-| ------------ | ------------ |
-| `[4{motion}` | `]4{motion}` |
-| `[44`        | `]44`        |
-| `{Visual}[4` | `{Visual}]4` |
+Easily encode or decode text in Base64 with the following key mappings:
 
-## Contributing
+### Normal Mode
+- `[4{motion}`: Encode text specified by a Vim motion
+- `]4{motion}`: Decode text specified by a Vim motion
 
-Pull requests are welcome.
+### Visual Mode
+- `{Visual}[4`: Encode visually selected text
+- `{Visual}]4`: Decode visually selected text
+
+### Whole Line
+- `[44`: Encode the entire line
+- `]44`: Decode the entire line
+
+## License
+
+See [LICENSE](LICENSE).
